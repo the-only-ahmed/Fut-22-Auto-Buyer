@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QWidget, QCompleter
 
 from PyQt5.QtCore import Qt, QStringListModel
 
+
 # Create a subclass of QMainWindow to setup the calculator's GUI
 class PyUi(QMainWindow):
     qualityItems = ["Quality", "Bronze", "Silver", "Gold", "Special"]

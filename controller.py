@@ -1,15 +1,17 @@
 import json
 import unidecode
+# from interface import PyUi
 
 # Create a Controller class to connect the GUI and the model
 class PyController:
     """PyCalc Controller class."""
     def __init__(self, view):
         """Controller initializer."""
-        self._view = view
-        # Connect signals and slots
-        self._connectSignals()
-        self._loadPlayers()
+        if (view != None):
+            self._view = view
+            # Connect signals and slots
+            self._loadPlayers()
+            self._connectSignals()
 
     def _loadPlayers(self):
         # Opening JSON file

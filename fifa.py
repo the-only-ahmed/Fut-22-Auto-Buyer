@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import sys
 import requests
 # from termcolor import colored
@@ -19,7 +19,7 @@ def main():
     view = PyUi()
     view.show()
     # Create instances of the model and the controller
-    PyController(view=view)
+    controller = PyController(view=view)
     
     # Execute the calculator's main loop
     sys.exit(pycalc.exec_())
